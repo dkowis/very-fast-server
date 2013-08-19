@@ -28,9 +28,7 @@ class MBService extends Actor with SprayActorLogging {
 
   lazy val oneMb = HttpResponse(
     entity = HttpEntity(`application/octet-stream`,
-      (1 to (1024 * 1024)).foldLeft(List[Byte]())((memo, item) => {
-        100.toByte :: memo
-      }).toArray
+      Array.fill(1024 * 1024)(100.toByte)
     )
   )
 
