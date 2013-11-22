@@ -3,7 +3,7 @@ import Keys._
 
 object Library {
   //versions
-  val sprayVersion = "1.1-M8"
+  val sprayVersion = "1.1-RC4"
   val akkaVersion = "2.1.4"
   val logbackVersion = "1.0.13"
 
